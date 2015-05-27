@@ -1,0 +1,18 @@
+<template name="layout">
+
+{{#ionBody}}
+    {{> ionNavBar}}
+    {{#ionNavView}}
+        {{> yield}}
+    {{/ionNavView}}
+	{{#ionView}}
+	{{#ionContent class="padding"}}
+		{{#ionSlideBox}}
+				  {{#ionSlide}}<h1>Slide 1</h1>{{/ionSlide}}
+				  {{#ionSlide}}<h1>Slide 2</h1>{{/ionSlide}}
+				  {{#ionSlide}}<h1>Slide 3</h1>{{/ionSlide}}
+		{{/ionSlideBox}}
+	{{/ionContent}}
+	{{/ionView}}
+{{/ionBody}}
+</template>
